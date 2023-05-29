@@ -15,12 +15,13 @@ if (isset($_SESSION['usuario'])) {
     $login = $_SESSION['usuario']['login'];
     $senha = $_SESSION['usuario']['senha'];
 
-    echo "Login e senha:";
-    echo "<br>";
-    print_r($login);
-    echo "<br>";
-    print_r($senha);
+     ?>
+     <h1>Login: <? print_r($login); ?></h1>
+     <h1>Senha: <? print_r($senha); ?></h1>
+<?php
     exit;
+
 }
-    echo "Login e senha não informados";
+
 ?>
+    <h1>Login e senha não informados</h1> 
